@@ -16,7 +16,7 @@
             <ul>
                 <li> <a href="about.html">Sobre petinder</a></li>
                 <li> <a href="tshirt.html">Camiseta</a></li>
-                <li> <a href="join.html">Hazte socio</a></li>
+                <li class="actual"> <a href="join.html">Hazte socio</a></li>
             </ul>
         </nav>
     </header>
@@ -31,26 +31,27 @@
             <fieldset>
                 <legend>Datos personales</legend>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
+                <input type="text" id="nombre" required="required" maxlenth="64" pattern="[A-Za-z-ñÑáéíóúÁÉÍÓÚ]{2,64}">
                 <label for="apellidos">Apellidos</label>
-                <input type="text" id="apellidos">
+                <input type="text" id="apellidos" required="required" maxlenth="128"
+                    pattern="[A-Za-z-ñÑáéíóúÁÉÍÓÚ]{2,64}">
                 <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo">
+                <input type="email" id="correo" required="required">
                 <label for="dni">DNI</label>
-                <input type="text" id="dni">
+                <input type="text" id="dni" required="required">
                 <label for="fecha">Fecha de nacimiento:</label>
                 <input type="date">
             </fieldset>
             <fieldset>
                 <legend>Dirección</legend>
                 <label for="calle">Calle y número</label>
-                <input type="text" id="calle">
+                <input type="text" id="calle" required="required">
                 <label for="ciudad">Ciudad</label>
-                <input type="text" id="ciudad">
+                <input type="text" id="ciudad" required="required">
                 <label for="provincia">Provincia</label>
-                <input type="text" id="provincia">
-                <label for="dni">Código Postal</label>
-                <input type="text" id="dni">
+                <input type="text" id="provincia" required="required">
+                <label for="cp">Código Postal</label>
+                <input type="text" id="cp" required="required">
                 <label for="fecha">País</label>
                 <select id="fecha">
                     <option selected>Seleccionar</option>
@@ -63,34 +64,49 @@
             <fieldset class="pago">
                 <legend>Datos de pago y camiseta</legend>
                 <div>
-                <h3>Método de pago</h3>
-                <input type="radio" id="transferencia"><label>Transferencia</label>
-                <input type="radio" id="tarjeta"><label for="tarjeta">Tarjeta de crédito</label>
-                <input type="radio" id="paypal"><label for="paypal">Pay pal</label>
-                <h3>Camiseta</h3>
-                <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.</p>
-                <label for="camiseta">Talla camiseta</label>
-                <select id="camiseta">
-                    <option selected>No quiero camiseta</option>
-                    <optgroup label="Mujeres">
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </optgroup>
-                    <optgroup label="Hombres">
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                        <option value="XXL">XXL</option>
-                    </optgroup>
-                </select>
+                    <h3>Método de pago</h3>
+                    <input type="radio" id="transferencia"><label>Transferencia</label>
+                    <input type="radio" id="tarjeta"><label for="tarjeta">Tarjeta de crédito</label>
+                    <input type="radio" id="paypal"><label for="paypal">Pay pal</label>
+                    <h3>Camiseta</h3>
+                    <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.
+                    </p>
+                    <label for="camiseta">Talla camiseta</label>
+                    <select id="camiseta">
+                        <option selected>No quiero camiseta</option>
+                        <optgroup label="Mujeres">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </optgroup>
+                        <optgroup label="Hombres">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </optgroup>
+                    </select>
                 </div>
             </fieldset>
+            <div class="required">* Todos los campos marcados son obligatorios</div>
+            <input type="checkbox" id="leer"><label for="leer">He leido y acepto la política de privacidad y las
+                condiciones de uso</label>
+            <input type="submit" value="Enviar">
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <p>2021 &copy; Petinder - María del Pilar Alegre Ramos</p>
+        <nav>
+            <ul>
+                <li> <a href="#">Términos y condiciones de uso</a></li>
+                <li> <a href="#">Política de privacidad</a></li>
+                <li> <a href="#">Cookies</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>

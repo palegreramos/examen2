@@ -20,8 +20,11 @@ body {
     margin: 0;
     width: 100vw;
     background-color: var(--fondo);
+    color: var(--texto);
 }
-
+header {
+    height: 6vw;
+}
 header, footer {
     width: 100vw;
 }
@@ -44,7 +47,12 @@ li a {
     text-decoration: none;
     color: black;
 }
-
+li a:hover {
+    color: var(--lila);
+}
+a.actual {
+    font-weight: 700;
+}
 li {
     margin-right: 1rem;
 }
@@ -56,6 +64,8 @@ body.index {
 header {
     background-color: white;
     box-shadow: 0 0.1rem 0.2rem gray;
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 header img, header nav {
     margin-left: 15vw;
@@ -65,13 +75,19 @@ header img, header nav {
     background-color: transparent;
     box-shadow: none;
 }
-
-.index .texto {
-    width: 25vw;
+.index footer, .tshirt footer {
+    position: absolute;
+    bottom: 0;
 }
-
-.index .text p {
-    font-size: small;
+.index .texto {
+    width: 30vw;
+}
+.index h1 {
+    font-size: 2.4rem;
+}
+.texto p {
+    font-weight: 500;
+    font-size: 0.75rem;
 }
 
 .index h1 span {
@@ -105,10 +121,15 @@ fieldset {
     width: 50%;
 }
 
-label, input, #fecha {
+fieldset label, fieldset input, #fecha {
     display: block;
     margin-left: 5%;
     margin-top: 0.2rem;
+}
+input[type="submit"] {
+    display: block;
+    background-color: var(--lila);
+    color: white;
 }
 .pago input, .pago label {
     display: inline;
@@ -118,8 +139,9 @@ label, input, #fecha {
 .pago div {
     margin-left: 5%;
 }
-input, select {
+fieldset input, select, .index input {
     width: 90%;
+    border: 1px #cccccc solid;
 }
 
 fieldset {
@@ -133,24 +155,79 @@ legend {
 }
 
 footer {
-    position: fixed;
     width: 100vw;
-    bottom: 0;
+    height: 10vh;
     background-color: var(--lila);
     color: white;
-    font-size: small;
+    font-size: 0.6rem;
 }
-
+footer p, footer nav {
+    margin-left: 15vw;
+}
 footer a {
     color: white;
 }
+footer a:hover {
+    color: var(--verdeclaro);
 
+}
+/*join.html*/
+div.required {color: red;}
+fieldset:not(:last-of-type) label:not(:last-of-type)::after {
+    content: "*";
+    color: red;
+}
+
+/*tshirt.html*/
+table {
+    table-layout: auto;
+    margin: 0 auto;
+    width: 100%;
+}
 table, th, tr, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-
+th[scope^="row"] {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+td {
+    text-align: center;
+}
+caption, tr {
+    height: 2rem;
+}
 caption {
+    line-height: 2rem;
     background-color: blue;
     color: white;
+}
+tr:first-child th:first-child {
+    background-color: var(--verde);
+}
+th {
+    background-color: var(--verdeclaro);
+}
+tr:nth-child(2n) td {
+    border-bottom-color: var(--verdeclaro);
+} 
+/*about.html*/
+figure {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 0;
+}
+figure img {
+    width: 100%;
+    border: 1px solid var(--verdeclaro);
+    padding: 0.3rem;
+}
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
+.about h1 {
+    margin-bottom:0;
 }
