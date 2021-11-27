@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Hazte socio</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src=" images/logo.svg" alt="logotipo petinder"></a>
+        <nav>
+            <ul>
+                <li> <a href="about.html">Sobre petinder</a></li>
+                <li> <a href="tshirt.html">Camiseta</a></li>
+                <li> <a href="join.html">Hazte socio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Hazte socio</h2>
+        <p>Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a
+            nuestros amigos
+            peludos. Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al primer pago.
+            Rellena el
+            siguiente formulario para unirte a nosotros:</p>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date">
+            </fieldset>
+            <fieldset>
+                <legend>Dirección</legend>
+                <label for="calle">Calle y número</label>
+                <input type="text" id="calle">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad">
+                <label for="provincia">Provincia</label>
+                <input type="text" id="provincia">
+                <label for="dni">Código Postal</label>
+                <input type="text" id="dni">
+                <label for="fecha">País</label>
+                <select id="fecha">
+                    <option selected>Seleccionar</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="España">España</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </fieldset>
+            <fieldset class="pago">
+                <legend>Datos de pago y camiseta</legend>
+                <div>
+                <h3>Método de pago</h3>
+                <input type="radio" id="transferencia"><label>Transferencia</label>
+                <input type="radio" id="tarjeta"><label for="tarjeta">Tarjeta de crédito</label>
+                <input type="radio" id="paypal"><label for="paypal">Pay pal</label>
+                <h3>Camiseta</h3>
+                <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.</p>
+                <label for="camiseta">Talla camiseta</label>
+                <select id="camiseta">
+                    <option selected>No quiero camiseta</option>
+                    <optgroup label="Mujeres">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </optgroup>
+                    <optgroup label="Hombres">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </optgroup>
+                </select>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@800&display=swap');
+
+:root {
+    --texto: rgb(23, 23, 23);
+    --lila: rgb(91, 73, 254);
+    --verde: rgb(125, 232, 140);
+    --verdeclaro: rgb(207, 243, 125);
+    --fondo: #f9f9f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    background-color: var(--fondo);
+}
+
+header, footer {
+    width: 100vw;
+}
+
+header img {
+    width: 10rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-right: 1rem;
+}
+
+body.index {
+    background: linear-gradient(75deg, rgb(207, 243, 125), rgb(125, 232, 140));
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 0.1rem 0.2rem gray;
+}
+header img, header nav {
+    margin-left: 15vw;
+}
+
+.index header {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.index .texto {
+    width: 25vw;
+}
+
+.index .text p {
+    font-size: small;
+}
+
+.index h1 span {
+    color: white;
+}
+
+input[type="search"] {
+    background-image: url("../images/icon_search.svg");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: contain;
+    padding-left: 2rem;
+    height: 2rem;
+    width: 100%;
+    margin: 0;
+}
+
+.index .hero {
+    position: absolute;
+    right: 10vw;
+    bottom: 10vh;
+    height: 65%;
+}
+
+main {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 50%;
+}
+
+label, input, #fecha {
+    display: block;
+    margin-left: 5%;
+    margin-top: 0.2rem;
+}
+.pago input, .pago label {
+    display: inline;
+    margin: 0 0.2rem;
+    width: initial;
+}
+.pago div {
+    margin-left: 5%;
+}
+input, select {
+    width: 90%;
+}
+
+fieldset {
+    border: 1px solid blue;
+    margin-top: 0.5rem;
+}
+
+legend {
+    background-color: blue;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background-color: var(--lila);
+    color: white;
+    font-size: small;
+}
+
+footer a {
+    color: white;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+caption {
+    background-color: blue;
+    color: white;
+}
